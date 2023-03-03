@@ -6,7 +6,7 @@ import SignUp from "./components/SignUp";
 import Login from "./components/Login";
 import Cookies from "universal-cookie";
 import Game from "./components/JoinGame";
-const api_key = "8ycabwv5z5u8";
+const api_key = process.env.API_KEY;
 
 function App() {
   const cookies = new Cookies();

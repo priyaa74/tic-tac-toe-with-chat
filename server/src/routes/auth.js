@@ -5,9 +5,8 @@ import { v4 as uuidv4 } from "uuid";
 
 const router = express.Router();
 
-const api_key = "8ycabwv5z5u8";
-const api_secret =
- "fbenzmp86w2w8zanjnn9qfkxj2zpzh8dtsanyvw8t8hdtugd7x5tkhvcgtw543sc";
+const api_key = process.env.API_KEY;
+const api_secret = process.env.API_SECRET;
 const serverClient = StreamChat.getInstance(api_key, api_secret);
 
 router.post("/signup", async (req, res) => {
