@@ -1,3 +1,6 @@
+import dotenv from 'dotenv';
+dotenv.config({debug:true});
+
 import express from "express";
 import bcrypt from "bcrypt";
 import { StreamChat } from "stream-chat";
@@ -5,8 +8,12 @@ import { v4 as uuidv4 } from "uuid";
 
 const router = express.Router();
 
+
 const api_key = process.env.API_KEY;
-const api_secret = process.env.API_SECRET;
+const api_secret =process.env.API_SECRET;
+
+
+
 const serverClient = StreamChat.getInstance(api_key, api_secret);
 
 router.post("/signup", async (req, res) => {

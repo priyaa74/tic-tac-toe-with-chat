@@ -1,13 +1,14 @@
+import  dotenv from 'dotenv';
+dotenv.config();
+
 import express from "express";
-import bcrypt from "bcrypt";
 import { StreamChat } from "stream-chat";
 import { v4 as uuidv4 } from "uuid";
-
 const router = express.Router();
 
-const api_key = "nv2zh5h8pmyh";
-const api_secret =
-  "gf4wmuf9rj9vzfpvrdjkwr7qapwty64jdrb48qv7dmqejhrfhc6z94zr2atzcw4q";
+
+const api_key =process.env.API_KEY;
+const api_secret =process.env.API_SECRET;
 
 router.post("/create", async (req, res) => {
   try {
