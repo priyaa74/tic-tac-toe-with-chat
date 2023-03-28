@@ -12,3 +12,4 @@ It is a multiplayer board game which also has functionality of online chat with 
 - Stream-chat-react
 
 ## Live- https://tic-tac-toe-priyaa74.vercel.app/
+![](https://github.com/priyaa74/tic-tac-toe-with-chat/blob/main/multiplayer.gif)
