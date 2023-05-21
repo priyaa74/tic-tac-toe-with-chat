@@ -9,7 +9,7 @@ function Login({ setIsAuth }) {
   const cookies = new Cookies();
 
   const login = () => {
-    Axios.post("http://localhost:3001/auth/login", {
+    Axios.post("https://spring-bud-gharial-hat.cyclic.app/auth/login", {
       username,
       password,
     }).then((res) => {
